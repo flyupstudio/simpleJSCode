@@ -1,0 +1,60 @@
+BODY{
+    background:#EBEBEB;
+    font-family: 'Roboto', sans-serif;
+}
+
+.invalid {
+    border-color: red;
+}
+
+.valid {
+    border-color: #ccc;
+}
+
+.formControl{
+    max-width: 500px;
+}
+
+.formControl .row{
+    padding: 10px 0px;
+}
+.formControl input[type="submit"],
+.formControl input[type="reset"]{
+    padding: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.formControl .centerAlign{
+    text-align: center;
+}
+.formControl sup{
+    color: #AC0000;
+    font-size: 12px;
+}
+.formControl .smallFont{
+    font-size: 12px;
+    font-style: italic;
+}
+.formControl .error{
+    border: 1px solid #AC0000;
+    padding: 10px;
+    color:#AC0000;
+    background: #EBEBEB;
+}
+.formControl input[type="number"],
+.formControl input[type="text"],
+.formControl select{
+    width: 60%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.formControl label{
+    font-size: 14px;
+
+    display: inline-block;
+    width: 30%;
+}
+.count{
+    width: 70px;
+}

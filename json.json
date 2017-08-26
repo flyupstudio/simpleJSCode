@@ -1,0 +1,37 @@
+[{
+  "id": "1",
+  "label": "a",
+  "child": [{
+    "id": 2,
+    "label": "B",
+    "child": [{
+      "id": 5,
+      "label": "E"
+    },
+      {
+        "id": 6,
+        "label": "F"
+      },
+      {
+        "id": 7,
+        "label": "G"
+      }
+    ]
+  },
+    {
+      "id": 3,
+      "label": "C"
+    },
+    {
+      "id": 4,
+      "label": "D",
+      "child": [{
+        "id": 8,
+        "label": "H"
+      }, {
+        "id": 9,
+        "label": "I"
+      }]
+    }
+  ]
+}]

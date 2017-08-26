@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+</head>
+<body>
+    <div>
+        <h2>Task Number 1</h2>
+        <form>
+            <div>
+                <input id="findId" placeholder="ID" type="number">
+                <button onclick="getJson(event)">Run and find ID</button>
+            </div>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <hr>
+    <div>
+        <h2>Task Number 2</h2>
+        <form id="formValidation" class="formControl">
+            <div class="row">
+                <label for="name">Name <sup>*</sup></label>
+                <input type="text"
+                       minlength="1"
+                       maxlength="100"
+                       pattern="[a-zA-Z]+"
+                       data-error="Username should only contain letters e.g. john"
+                       name="name"
+                       placeholder=""
+                       id="name"
+                       required>
+            </div>
+            <div class="row">
+                <label for="address1">Address 1<sup>*</sup></label>
+                <input type="text"
+                       minlength="1"
+                       maxlength="100"
+                       pattern="[a-zA-Z0-9]+"
+                       data-error="Address 1 should contain letters and numeric e.g. Some street 121"
+                       name="address1"
+                       placeholder=""
+                       id="address1"
+                       required>
+            </div>
+            <div class="row">
+                <label for="address2">Address 2</label>
+                <input type="text"
+                       minlength="0"
+                       maxlength="100"
+                       pattern="[a-zA-Z0-9]+"
+                       data-error="Address 2 should contain letters and numeric e.g. Some street 121"
+                       name="address2"
+                       placeholder=""
+                       id="address2"
+                       >
+            </div>
+            <div class="row">
+                <label for="city">City<sup>*</sup></label>
+                <input type="text"
+                       minlength="1"
+                       maxlength="50"
+                       pattern="[a-zA-Z0-9]+"
+                       data-error="City should contain letters and numeric e.g. New-York"
+                       name="city"
+                       placeholder=""
+                       id="city"
+                       required
+                >
+            </div>
+
+            <div class="row">
+                <label for="state">State<sup>*</sup></label>
+                <select required
+                        pattern="[a-zA-Z]+"
+                        data-error="Please select state"
+                        name="state"
+                        id="state"
+                >
+                    <option value="">Please Select</option>
+                    <option value="NY">New York</option>
+                    <option value="CA">California</option>
+                </select>
+
+            </div>
+
+            <div class="row">
+                <label for="zipCode">Zip Code<sup>*</sup></label>
+                <input type="text"
+                       minlength="5"
+                       maxlength="5"
+                       pattern="[0-9]+"
+                       data-error="zipCode should contain numeric e.g. 12345"
+                       name="zipCode"
+                       placeholder=""
+                       id="zipCode"
+                       required
+                >
+            </div>
+            <div class="row smallFont"><sup>*</sup> Field are requared </div>
+            <div class="row centerAlign">
+                <input value="Ok" type="submit">
+                <input value="Cancel" type="reset">
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div>
+        <h2>Task Number 3</h2>
+        <h3>Reverse a string</h3>
+        <form class="formControl">
+            <div class="row">
+                <input type="text" id="stringTask3" >
+                <input type="button" value="Reversify" onclick="actionReducer(event, 'REVERSIFY_ALL')">
+            </div>
+            <div id="resultTask3" class="row"></div>
+
+        </form>
+        <h3>Reverse a word</h3>
+        <form class="formControl">
+            <div class="row">
+                <input type="text" id="stringTask31" >
+                <input type="button" value="Reversify" onclick="actionReducer(event, 'REVERSIFY_WORD')">
+            </div>
+            <div id="resultTask31" class="row"></div>
+
+        </form>
+    </div>
+    <hr>
+    <div>
+        <h2>Task Number 4</h2>
+        <h3>Create a “native” method</h3>
+        <form class="formControl">
+            <div class="row">
+                <input type="text" id="stringTask4" >
+                <input type="number" class="count" placeholder="Count" min="1" max="100" id="stringTask41" >
+                <input type="button" value="Add method" onclick="actionReducer(event, 'NATIVE_METHOD')">
+            </div>
+            <div id="resultTask4" class="row"></div>
+        </form>
+    </div>
+    <hr>
+    <div>
+        <h2>Task Number 5</h2>
+        <h3>Create find needle method</h3>
+        <form class="formControl">
+            <div class="row">
+                <input type="text" placeholder="Haystack" id="stringTask5" >
+                <input type="text" class="count" placeholder="Needle"  id="stringTask51" >
+                <input type="button" value="Find" onclick="actionReducer(event, 'NEEDLE')">
+            </div>
+            <div id="resultTask5" class="row"></div>
+            <div class="row">Time to implementation 10 min for this</div>
+        </form>
+    </div>
+    <hr>
+    <div>
+        <h2>Task Number 6</h2>
+        <h3>Create a palindrome method</h3>
+        <form class="formControl">
+            <div class="row">
+                <input type="text" placeholder="Is Palindrome" id="stringTask6" >
+                <input type="button" value="Find" onclick="actionReducer(event, 'PALINDROME')">
+            </div>
+            <div id="resultTask6" class="row"></div>
+        </form>
+    </div>
+</body>
+</html>
